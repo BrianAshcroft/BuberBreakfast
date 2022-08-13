@@ -4,27 +4,28 @@ using BuberBreakfast.Contracts.Breakfast;
 namespace BuberBreakfast.Controllers;
 
 [ApiController]
+[Route("[controller]")]
 public class BreakfastsController : ControllerBase
 {
-    [HttpPost("/breakfasts")]
+    [HttpPost()]
     public IActionResult CreateBreakfast(CreateBreakfastRequest request)
     {
         return Ok(request);
     }
 
-    [HttpGet("/breakfast/{id:guid}")]
+    [HttpGet("{id:guid}")]
     public IActionResult GetBreakfast(Guid id)
     {
         return Ok(id);
     }
 
-    [HttpPut("/breakfast/{id:guid}")]
+    [HttpPut("{id:guid}")]
     public IActionResult UpsertBreakfast(Guid id, UpsertBreakfastRequest request)
     {
         return Ok(request);
     }
 
-    [HttpDelete("/breakfast/{id:guid}")]
+    [HttpDelete("{id:guid}")]
     public IActionResult DeleteBreakfast(Guid id)
     {
         return Ok(id);

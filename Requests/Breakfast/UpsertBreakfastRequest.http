@@ -1,5 +1,5 @@
 @id = 00000000-0000-0000-0000-000000000000
-PUT  https://localhost:7003/breakfast/{{id}}
+PUT  https://localhost:7003/breakfasts/{{id}}
 Content-Type: application/json
 
 {
