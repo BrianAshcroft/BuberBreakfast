@@ -1,0 +1,50 @@
+@id = b95d5ce1-b608-4099-a0ee-211b522a6178
+
+
+GET  https://localhost:7003/breakfasts/{{id}}
+Content-Type: application/json
+
+
+###
+POST https://localhost:7003/breakfasts
+Content-Type: application/json
+
+{
+    "name": "Vegan Sunshine",
+    "description": "Vegan everything! Join us for a healthy breakfast..",
+    "startDateTime": "2022-04-08T08:00:00",
+    "endDateTime": "2022-04-08T11:00:00",
+    "savory": [
+        "Oatmeal",
+        "Avocado Toast",
+        "Omelette",
+        "Salad"
+    ],
+    "Sweet": [
+        "Cookie"
+    ]
+}
+
+###
+PUT  https://localhost:7003/breakfasts/{{id}}
+Content-Type: application/json
+
+{
+    "name": "Vegan Sunshine Edited",
+    "description": "Vegan everything! Join us for a healthy breakfast..",
+    "startDateTime": "2022-04-08T08:00:00",
+    "endDateTime": "2022-04-08T11:00:00",
+    "savory": [
+        "Oatmeal",
+        "Avocado Toast",
+        "Omelette",
+        "Salad"
+    ],
+    "Sweet": [
+        "Cookie"
+    ]
+}
+
+###
+DELETE  https://localhost:7003/breakfasts/{{id}}
+Content-Type: application/json
