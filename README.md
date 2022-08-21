@@ -8,4 +8,5 @@ uses VScode and dotnet CLI to build a .net 6 API
 
 # Possible Enhancements
 - add db, orm, and repo
-- use automapper to map 
+- use automapper to map
+- add swagger
